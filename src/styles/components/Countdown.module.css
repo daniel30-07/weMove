@@ -17,3 +17,22 @@
   font-size: 8.5rem;
   text-align: center;
 }
+
+.countdownContainer > div span {
+  display: 1;
+}
+
+/* primeiro número dos minutos e primeiro número dos segundos */
+.countdownContainer > div span:first-child {
+  border-right: 1px solid #f0f1f3;
+}
+
+/* segundo número dos minutos e segundo número dos segundos */
+.countdownContainer > div span:last-child {
+  border-left: 1px solid #f0f1f3;
+}
+/* dois pontos */
+.countdownContainer > span {
+  font-size: 6.25rem;
+  margin: 0 0.5rem;
+}
