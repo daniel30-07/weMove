@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from "react";
-import { render } from "react-dom";
 import { ChallengeContext } from "../contexts/ChallengesContexts";
 
 import styles from "../styles/components/Countdown.module.css";
