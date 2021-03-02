@@ -1,9 +1,9 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Wemove Next.js" />
+  <img width="600" src="./public/wemoveMain.gif" alt="WeMove Next.js" />
 
   &#xa0;
 
-  <!-- <a href="https://wemovenext.netlify.app">Demo</a> -->
+  <a href="https://wemove-one.vercel.app/">Demo</a>
 </div>
 
 <h1 align="center">WeMove</h1>
@@ -24,10 +24,8 @@
   <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/wemove-next?color=56BEB8" /> -->
 </p>
 
-Status -->
-
 <h4 align="center"> 
-	🚧  WeMove 🚀 Under construction...  🚧
+	🚧  WeMove - Under construction...  🚧
 </h4> 
 
 <hr>
@@ -39,23 +37,26 @@ Status -->
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
+  <a href="https://github.com/daniel30-07" target="_blank">Author</a>
 </p>
 
 <br>
 
-## :dart: About ##
+## About
 
 A React app for stimulating programmers and office workers to take small breaks for stretching and exercise during the day. This application uses the technique of Pomodoro and quantification of points and levels to encourage the user to improve their physical and mental health.
 
-## :sparkles: Features ##
+Developed during the 'Next Level Week #4' from [Rocketseat](https://rocketseat.com.br/).
 
-:heavy_check_mark: Start countdown;\
-:heavy_check_mark: Start new challenge;\
-:heavy_check_mark: Earn points;\
-:heavy_check_mark: Level up;
+## Features
 
-## :rocket: Technologies ##
+* Start countdown;
+* Start new challenge;
+* Earn points;
+* Level up;
+* Persisting data across page reloads using Cookies
+
+## Technologies
 
 The following tools were used in this project:
 
@@ -63,11 +64,11 @@ The following tools were used in this project:
 - [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 
-## :white_check_mark: Requirements ##
+## Requirements
 
-Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+Before starting, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
 
-## :checkered_flag: Starting ##
+## Starting
 
 ```bash
 # Clone this project
@@ -85,12 +86,15 @@ $ yarn start
 # The server will initialize in the <http://localhost:3000>
 ```
 
-## :memo: License ##
+## License
 
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/daniel30-07" target="_blank">Daniel Carvalho</a>
+Made by <a href="https://github.com/daniel30-07" target="_blank">Daniel Carvalho</a>
+
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/daniel-carvalho-0a4916122/)](https://www.linkedin.com/in/daniel-carvalho-0a4916122/)
+
 
 &#xa0;
 
