@@ -12,6 +12,7 @@ import { ChallengesProvider } from "../contexts/ChallengesContexts";
 import { Login } from "../components/Login";
 import React from "react";
 import SideBar from "../components/SideBar";
+import { SidebarProvider } from "../contexts/SidebarContext";
 
 interface HomeProps {
   level: number;
@@ -32,20 +33,22 @@ export default function Home(props: HomeProps) {
         <Head>
           <title>Inicio | WeMove</title>
         </Head>
-        <SideBar />
-        <ExperienceBar />
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile />
-              <CompletedChallenges />
-              <Countdown />
-            </div>
-            <div>
-              <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
+        <SidebarProvider>
+          <SideBar />
+          <ExperienceBar />
+          <CountdownProvider>
+            <section>
+              <div>
+                <Profile />
+                <CompletedChallenges />
+                <Countdown />
+              </div>
+              <div>
+                <ChallengeBox />
+              </div>
+            </section>
+          </CountdownProvider>
+        </SidebarProvider>
       </div>
     </ChallengesProvider>
   );

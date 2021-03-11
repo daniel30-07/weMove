@@ -32,7 +32,7 @@ export function Profile() {
 
           <div>
             <strong>
-              <a href="http://localhost:3000/api/auth/signin">
+              <a href="https://wemove-one.vercel.app/api/auth/signin">
                 Entrar com GitHub
               </a>
             </strong>

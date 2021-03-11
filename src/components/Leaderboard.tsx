@@ -1,16 +1,21 @@
-import Head from "next/head";
-import styles from "../styles/components/Leaderboard.module.css";
+import { useContext } from "react";
+import { SidebarContext } from "../contexts/SidebarContext";
+
+import styles from "../styles/components/LevelUpModal.module.css";
 
 export function Leaderboard() {
-  return (
-    <>
-      <Head>
-        <title>Leaderboard</title>
-      </Head>
+  const { closeModalLeaderboard } = useContext(SidebarContext);
 
+  return (
+    <div className={styles.overlay}>
       <div className={styles.container}>
-        <h2>Leaderboard - Coming soon..</h2>
+        <strong>Leaderboard</strong>
+        <p>Coming soon...</p>
+
+        <button type="button" onClick={closeModalLeaderboard}>
+          <img src="/icons/close.svg" alt="close modal" />
+        </button>
       </div>
-    </>
+    </div>
   );
 }

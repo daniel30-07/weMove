@@ -1,5 +1,3 @@
-import { CompletedChallenges } from "../components/CompletedChalanges";
-
 import { Leaderboard } from "./Leaderboard";
 import styles from "../styles/components/SideBar.module.css";
 
@@ -11,20 +9,25 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-//import { SidebarContext } from "../contexts/SidebarContext";
+import { SidebarContext } from "../contexts/SidebarContext";
 
 import { signOut, signIn, useSession } from "next-auth/client";
 import { useRouter } from "next/router";
 import React from "react";
-//import { useContext } from "react";
+import { useContext } from "react";
 
 export default function SideBar() {
   const router = useRouter();
   const url = process.env.REACT_APP_URL;
   const [session, loading] = useSession();
 
-  // const { isActive, setActive } = useContext(SidebarContext);
-  console.log("session", session);
+  const { isLeaderboard, callLeaderboard } = useContext(SidebarContext);
+
+  function handleLeaderboard() {
+    console.log("CHAMOUU", isLeaderboard);
+
+    callLeaderboard();
+  }
 
   return (
     <div className={styles.container}>
@@ -43,7 +46,7 @@ export default function SideBar() {
           className={`${styles.icon} `}
           icon={faAward}
           size="2x"
-          onClick={() => <Leaderboard />}
+          onClick={handleLeaderboard}
         />
         {!session && (
           <FontAwesomeIcon
@@ -51,7 +54,7 @@ export default function SideBar() {
             icon={faSignInAlt}
             size="2x"
             onClick={() => {
-              router.push("http://localhost:3000/api/auth/signin");
+              router.push("https://wemove-one.vercel.app/api/auth/signin");
               //signIn();
               //signOut({ callbackUrl: `${url}/` });
             }}
