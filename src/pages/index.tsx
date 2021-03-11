@@ -9,6 +9,9 @@ import styles from "../styles/pages/Home.module.css";
 import { ChallengeBox } from "../components/ChallengeBox";
 import { CountdownProvider } from "../contexts/CountdownContext";
 import { ChallengesProvider } from "../contexts/ChallengesContexts";
+import { Login } from "../components/Login";
+import React from "react";
+import SideBar from "../components/SideBar";
 
 interface HomeProps {
   level: number;
@@ -29,6 +32,7 @@ export default function Home(props: HomeProps) {
         <Head>
           <title>Inicio | WeMove</title>
         </Head>
+        <SideBar />
         <ExperienceBar />
         <CountdownProvider>
           <section>
