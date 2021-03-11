@@ -4,7 +4,7 @@
   max-width: 992px;
   /* centralizar */
   margin: 0 auto;
-  padding: 2.5rem 2rem;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
 }

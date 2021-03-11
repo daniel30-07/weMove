@@ -1,0 +1,8 @@
+.loginContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.loginContainer button {
+  border: none;
+}
