@@ -55,7 +55,7 @@ export default function SideBar() {
             icon={faSignInAlt}
             size="2x"
             onClick={() => {
-              router.push(`${process.env.NEXTAUTH_URL}api/auth/signin`);
+              router.push("/api/auth/signin");
               //signIn();
               //signOut({ callbackUrl: `${url}/` });
             }}
