@@ -56,7 +56,7 @@ export default function SideBar() {
             size="2x"
             onClick={() => {
               router.push("/api/auth/signin");
-              //signIn();
+              signIn();
               //signOut({ callbackUrl: `${url}/` });
             }}
           />
