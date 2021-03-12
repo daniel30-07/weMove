@@ -32,7 +32,7 @@ export function Profile() {
 
           <div>
             <strong>
-              <a href="https://wemove-one.vercel.app/api/auth/signin">
+              <a href={`${process.env.NEXTAUTH_URL}api/auth/signin`}>
                 Entrar com GitHub
               </a>
             </strong>

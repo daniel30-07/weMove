@@ -6,6 +6,7 @@ import {
   faAward,
   faSignOutAlt,
   faSignInAlt,
+  prefix,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -54,7 +55,7 @@ export default function SideBar() {
             icon={faSignInAlt}
             size="2x"
             onClick={() => {
-              router.push("https://wemove-one.vercel.app/api/auth/signin");
+              router.push(`${process.env.NEXTAUTH_URL}api/auth/signin`);
               //signIn();
               //signOut({ callbackUrl: `${url}/` });
             }}
